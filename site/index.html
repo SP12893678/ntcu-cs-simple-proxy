@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>資訊工程學系-台中教育大學</title>
+        <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            overflow-x: hidden;
+            padding: 16px;
+        }
+        .app{
+            width: 100vw;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        h1{
+            font-size: 75px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .gear {
+            position:absolute;
+            height: 350px;
+            width:  350px;
+        }
+        
+        .gear-left{
+            top: 40%;
+            left: 50%;
+            transform: translate(-102%,-50%);
+            animation: gear-left-roate 3s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function:ease-out; */
+        }
+        
+        .gear-right{
+            top: 40%;
+            right: 50%;
+            transform: translate(102%,-50%);
+            animation: gear-right-roate 3s;
+            animation-delay: 100ms;
+            animation-iteration-count: infinite;
+            /* animation-timing-function:ease-out; */
+        }
+
+        @keyframes gear-left-roate {
+            from{
+                transform: translate(-102%,-50%) rotate(0deg);
+            }
+            to{
+                transform: translate(-102%,-50%) rotate(360deg) ;
+            }
+        }
+
+        @keyframes gear-right-roate {
+            from{
+                transform: translate(102%,-50%) rotate(360deg);
+            }
+            to{
+                transform: translate(102%,-50%) rotate(0deg) ;
+            }
+        }
+
+        hr{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 3px solid rgba(0,0,0,.1);
+        }
+
+        h3{
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        h4{
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        h5{
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .shadow-box-container{ 
+            margin-bottom: 20px;
+            box-shadow: 5px 4px 8px 0px rgb(33 33 33 / 40%);
+            padding: 12px;
+            border-radius: 8px;
+            transition: .3s;
+        }
+        .shadow-box-container:hover{ 
+            box-shadow: 5px 4px 12px 0px rgb(33 33 33 / 50%);
+        }
+        .topnav{
+            height: 64px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding:0 16px ;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <h2>
+                臺中教育大學 ─ 資訊工程學系
+            </h2>
+        </div>
+
+        <hr style="margin-top: 4px;">
+
+        <main>
+
+        
+        
+        <div class="app">
+            <h1>維護中</h1>
+            <img class="gear gear-left" src="./C.png" alt="" srcset="">
+            <img class="gear gear-right" src="./S.png" alt="" srcset="">
+        </div>
+        <h2 style="text-align:center ;">請下滑看更多資工系資訊</h2>
+
+        <div class="offset-0 col-12 offset-lg-1 col-lg-10 mt-5">
+            <div>
+                <a name="history"></a>
+                <h4>系所歷史</h4>
+                <div class="shadow-box-container">
+
+                    <p>爲配合學校中長程校務發展計畫及國家整體建設，因應未來產業發展需求，本校於93學年度成立資訊科學學系，為本校第一個非師資培育學系。先後由甯自強博士、王讚彬博士、張林煌博士擔任系主任，充實軟硬體設備，並於96學年度成立碩士班，於101學年度起正式更名為資訊工程學系，2012年8月1日由王讚彬博士接任第四任系主任，並通過大學部及碩士班IEET工程科技教育認證，2014年8月1日由孔崇旭博士接任第五任系主任、2017年8月1日由賴冠州博士接任第六任系主任、2020年8月1日由徐國勛博士接任第七任系主任，持續達成教師在教學與研究的紮實，並培養學生在資訊領域的專業素養。<br>
+                        <br>
+                        本系於民國101及104年分別通過大學部及全系（含碩士班）之IEET國際工程及科技教育認證。<br>
+                        相關圖書儀器新穎充實，具有完整的課程規劃，涵蓋目前國內外資訊領域重要的研究方向與就業趨勢。注重理論與應用並重，基礎及專業均衡發展。現有10位專任教授、副教授、助理教授（均具博士學位）。本系師資專長涵蓋計算機系統(如雲端運算、平行處理、高效能計算、大數據分析、嵌入式系統等)、網路(如資訊安全、智慧物聯網、行動計算、軟體定義網路、無線感測網路等)及軟體工程(如軟體系統開發、人工智慧、機器學習、軟體測試、智慧型機器人等)。系上每位教師平均執行1件以上之研究計畫，皆具研究及教學熱忱。</p>
+                        <p>為增進學生實務經驗，本系積極結合業界資源，媒合學生與相關企業，透過實習讓學生體驗職場生活，瞭解本身所缺要素，再透過學校課程加以補強，以縮短學校專業養成與就業職能要求之落差。</p>
+                        <p>除此之外，為培養學生國際視野，亦與美國紐約理工學院(NYIT)資訊工程學系簽訂雙聯學制，提供學生出國留學取得雙邊學位之機制。另外與多所國際學校亦簽訂學生交換制度，例如華中科技大學、東京學藝大學…等校，提供學生短期國際交流管道，以培養具國際視野之資訊菁英人才。</p>
+                    </div>
+                        <hr>
+                        <a name="education-achievement"></a>
+                        <h4>教育目標</h4>
+                        <div class="shadow-box-container">
+                        <p>本系大學部自98學年度起通過IEET國際工程及科技教育認證，並訂定下列教育目標及核心能力：<br>
+                            教育目標：<br>
+                            1.教育學生在資訊工程領域的基本專業技能<br>
+                            需具備資訊工程與應用所需之基本數學知識；熟悉資料結構、演算法及資料分析的能力；具備程式設計與應用軟體工程技術之能力；熟悉計算機原理與應用數位系統設計之能力；具備計算機網路與安全技術及應用之能力。</p>
+                <p><br>
+                    2.建立學生團隊合作能力與良好工作態度<br>
+                    需具備科技簡報與寫作，完成團隊專案任務及溝通協調與合作之能力；理解專業倫理道德觀念與社會責任。</p>
+
+                <p><br>
+                    3.培養學生宏觀的國際視野與終身學習能力<br>
+                    需瞭解全球發展趨勢及國內外相關產業現況；培養終身學習及閱讀英文專業資訊之能力。</p>
+
+                <p>為達成上述教育目標，本系安排一系列基礎科學及工程專業課程，讓學生學習足夠的專業知識，了解、思考以系統化方式解決問題。再經由總整課程讓學生實際運用已具備知識及技術，解決複雜且整合性的工程問題。同時也培養學生良好的工作及團隊合作態度，使其具備自我認知及信心。<br>
+                    &nbsp;</p>
+                    </div>
+
+                <hr>
+                <a name="core-ability"></a>
+                <h4>核心能力</h4>
+                <table align="center" border="1" cellspacing="0"
+                    style="width:15.0cm">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="background-color:#8db3e2;
+                                height:26.9pt">
+                                <p><strong>《教育目標核心能力</strong><strong>(</strong><strong>大學部</strong><strong>)</strong><strong>》</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#8db3e2; height:15.85pt;
+                                width:99.35pt">
+                                <p><strong>教育目標</strong><strong> 1</strong></p>
+                            </td>
+                            <td style="background-color:#8db3e2; height:15.85pt;
+                                width:347.3pt">
+                                <p><strong>教育學生在資訊工程領域的基本專業技能</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:76.05pt; width:99.35pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:76.05pt; width:347.3pt">
+                                <p><strong>1.1 </strong><strong>具備資訊科學與應用所需的基本數學知識</strong></p>
+                                <p><strong>1.2 </strong><strong>熟悉資料結構、演算法及資料分析的能力</strong></p>
+                                <p><strong>1.3 </strong><strong>具備程式設計與應用軟體工程技術之能力</strong></p>
+                                <p><strong>1.4 </strong><strong>熟悉計算機原理與應用數位系統設計之能力</strong></p>
+                                <p><strong>1.5 </strong><strong>具備計算機網路與安全技術及應用之能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#8db3e2; height:7.25pt;
+                                width:99.35pt">
+                                <p><strong>教育目標</strong><strong> 2</strong></p>
+                            </td>
+                            <td style="background-color:#8db3e2; height:7.25pt;
+                                width:347.3pt">
+                                <p><strong>建立學生團隊合作能力與良好工作態度</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:38.8pt; width:99.35pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:38.8pt; width:347.3pt">
+                                <p><strong>2.1 </strong><strong>具備科技簡報與寫作的能力</strong></p>
+                                <p><strong>2.2 </strong><strong>具備完成團隊專案任務及溝通協調與合作之能力</strong></p>
+                                <p><strong>2.3 </strong><strong>理解專業倫理道德觀念與社會責任</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#8db3e2; height:5.65pt;
+                                width:99.35pt">
+                                <p><strong>教育目標</strong><strong> 3</strong></p>
+                            </td>
+                            <td style="background-color:#8db3e2; height:5.65pt;
+                                width:347.3pt">
+                                <p><strong>培養學生宏觀的國際視野與終身學習能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:37.2pt; width:99.35pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:37.2pt; width:347.3pt">
+                                <p><strong>3.1 </strong><strong>瞭解全球發展趨勢及國內外相關產業現況</strong></p>
+                                <p><strong>3.2 </strong><strong>培養終身學習及閱讀英文專業資訊之能力</strong></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <table align="center" border="1" cellspacing="0"
+                    style="width:422.25pt">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="background-color:#9999ff;
+                                height:28.8pt">
+                                <p><strong>《教育目標核心能力</strong><strong>(</strong><strong>碩士班</strong><strong>)</strong><strong>》</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#9999ff; height:4.15pt;
+                                width:99.25pt">
+                                <p><strong>教育目標</strong><strong> 1</strong></p>
+                            </td>
+                            <td style="background-color:#9999ff; height:4.15pt;
+                                width:347.3pt">
+                                <p><strong>教育學生在資訊工程領域之專業素養</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:49.5pt; width:99.25pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:49.5pt; width:347.3pt">
+                                <p><strong>1.1</strong><strong> </strong><strong>具備軟體工程、計算機系統及網路通訊領域至少一項領域之專業素養</strong></p>
+                                <p><strong>1.2 </strong><strong>應用相關知識以解決資訊工程問題之能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#9999ff; height:9.95pt;
+                                width:99.25pt">
+                                <p><strong>教育目標</strong><strong> 2</strong></p>
+                            </td>
+                            <td style="background-color:#9999ff; height:9.95pt;
+                                width:347.3pt">
+                                <p><strong>培養學生創新與獨立研究之能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:34.4pt; width:99.25pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:34.4pt; width:347.3pt">
+                                <p><strong>2.1 </strong><strong>具備資訊工程相關領域創新及獨立研發之能力</strong></p>
+                                <p><strong>2.2 </strong><strong>具備科技英文閱讀與寫作之能力</strong></p>
+                                <p><strong>2.3 </strong><strong>發表專業論文與口頭報告之能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#9999ff; height:30.3pt;
+                                width:99.25pt">
+                                <p><strong>教育目標</strong><strong> 3</strong></p>
+                            </td>
+                            <td style="background-color:#9999ff; height:30.3pt;
+                                width:347.3pt">
+                                <p><strong>建立學生跨領域思考、團隊合作、有效溝通與整合管理</strong></p>
+                                <p><strong>能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:29.55pt; width:99.25pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:29.55pt; width:347.3pt">
+                                <p><strong>3.1 </strong><strong>具備專案規劃、執行與整合管理之能力</strong></p>
+                                <p><strong>3.2 </strong><strong>具備跨領域思考、團隊合作與有效溝通之能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#9999ff; height:21.65pt;
+                                width:99.25pt">
+                                <p><strong>教育目標</strong><strong> 4</strong></p>
+                            </td>
+                            <td style="background-color:#9999ff; height:21.65pt;
+                                width:347.3pt">
+                                <p><strong>培養學生宏觀的國際視野與終身學習能力</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:27.7pt; width:99.25pt">
+                                <p><strong>核心能力</strong></p>
+                            </td>
+                            <td style="height:27.7pt; width:347.3pt">
+                                <p><strong>4.1 </strong><strong>瞭解國內外相關產業趨勢並具備國際視野</strong></p>
+                                <p><strong>4.2 </strong><strong>培養終身自我學習與成長之能力</strong></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <a name="location"></a>
+                <h4>系所位置</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.760881340122!2d120.66914771517004!3d24.145034284396324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d74a3c44d6d%3A0xb91909175b04a040!2z5ZyL56uL6Ie65Lit5pWZ6IKy5aSn5a246LOH6KiK5bel56iL5a2457O7!5e0!3m2!1sen!2stw!4v1535875691242"
+                    width="100%" height="450" frameborder="0" style="border:0"
+                    allowfullscreen=""></iframe>
+                <hr>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container preserve-top position-relative">
+            <a name="teachers"></a>
+            <div id="teachers">
+                <h3 class="text-center mb-4">系所師資</h3>
+                <hr class="mb-5">
+                <div class="row">
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 徐國勛<span class="mx-1">/</span>
+                            副教授兼系主任</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:glenn@mail.ntcu.edu.tw">glenn@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/glenn/">http://www.ntcu.edu.tw/glenn/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183807">04-22183807</a></li>
+                            </ul>
+                            <hr>
+                            軟體工程、軟體流程、軟體測試、物件導向技術、網際服務
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 賴冠州<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:kclai@mail.ntcu.edu.tw">kclai@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/kclai/">http://www.ntcu.edu.tw/kclai/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183810">04-22183810</a></li>
+                            </ul>
+                            <hr>
+                            雲端運算、邊緣計算、同儕運算、網格運算、巨量資料處理、資料串流計算
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 孔崇旭<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:csko@mail.ntcu.edu.tw">csko@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/csko/">http://www.ntcu.edu.tw/csko/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183804">04-22183804</a></li>
+                            </ul>
+                            <hr>
+                            物件導向技術、遊戲式數位學習、視覺化程式技術、軟體測試、智慧型機器人
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 張林煌<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:lchang@mail.ntcu.edu.tw">lchang@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/lchang/">http://www.ntcu.edu.tw/lchang/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183812">04-22183812</a></li>
+                            </ul>
+                            <hr>
+                            無線通訊網路、軟體定義網路、智慧物聯網、多媒體網路通訊
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 王讚彬<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:tpwang@mail.ntcu.edu.tw">tpwang@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/tpwang/">http://www.ntcu.edu.tw/tpwang/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183806">04-22183806</a></li>
+                            </ul>
+                            <hr>
+                            無線網際網路、行動計算、車載網路、智慧物聯網
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 顧維祺<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:wcku@mail.ntcu.edu.tw">wcku@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/wcku/">http://www.ntcu.edu.tw/wcku/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183811">04-22183811</a></li>
+                            </ul>
+                            <hr>
+                            密碼學、網路安全
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 林嬿雯<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:ywlin@mail.ntcu.edu.tw">ywlin@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/ywlin/">http://www.ntcu.edu.tw/ywlin/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183809">04-22183809</a></li>
+                            </ul>
+                            <hr>
+                            智慧物聯網、行動計算、無線網際網路
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 黃國展<span class="mx-1">/</span>
+                            教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:kchuang@mail.ntcu.edu.tw">kchuang@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/kchuang/">http://www.ntcu.edu.tw/kchuang/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183813">04-22183813</a></li>
+                            </ul>
+                            <hr>
+                            平行及分散式處理、網格及雲端計算、高效能計算、服務導向計算
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 李宗翰<span class="mx-1">/</span>
+                            副教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:thlee@mail.ntcu.edu.tw">thlee@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="https://sites.google.com/site/ntcuesl/home">https://sites.google.com/site/ntcuesl/home</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183801">04-22183801</a></li>
+                            </ul>
+                            <hr>
+                            行動計算、智慧物聯網、嵌入式系統、無線感測網路、網路入侵防禦
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 李宜軒<span class="mx-1">/</span>
+                            副教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:yslee@mail.ntcu.edu.tw">yslee@mail.ntcu.edu.tw</a></li>
+                                <li style="word-break: break-all;">個人網站：<a
+                                        href="http://www.ntcu.edu.tw/yslee/">http://www.ntcu.edu.tw/yslee/</a></li>
+                                <li style="word-break: break-all;">辦公室電話：<a
+                                        href="tel:04-22183808">04-22183808</a></li>
+                            </ul>
+                            <hr>
+                            雲端運算、圖計算、串流資料計算、大數據分析
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="adjunct-teachers">
+                <h3 class="text-center mb-4">兼任師資</h3>
+                <hr class="mb-5">
+                <div class="row">
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 莊家雋<span class="mx-1">/</span>
+                            兼任助理教授</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:ogre0403@gmail.com">ogre0403@gmail.com</a></li>
+                            </ul>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <div class="shadow-box-container">
+                        <h5 class="text-center pb-2"> 吳仁智<span class="mx-1">/</span>
+                            兼任講師</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                        </div>
+                        <div class="cartoon-balloon mt-5 p-3">
+                            <ul style="margin: 0; padding: 0; list-style:
+                                none;">
+                                <li style="word-break: break-all;">Email: <a
+                                        href="mailto:chihwu33@gmail.com">chihwu33@gmail.com</a></li>
+                            </ul>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a name="officer"></a>
+            <div class="mb-5" id="office-members">
+                <h3 class="text-center mb-4">系所辦公室行政人員</h3>
+                <hr class="mb-5">
+                <div class="shadow-box-container">
+                <h5 class="text-center pb-2">朱俐菁<span class="mx-1">/</span>辦事員</h5>
+                <div class="d-flex justify-content-center mt-4">
+                </div>
+                <div class="cartoon-balloon mt-5 p-3">
+                    <ul style="margin: 0; padding: 0; list-style: none;">
+                        <li style="word-break: break-all;">Email: <a
+                                href="mailto:cis@gm.ntcu.edu.tw">cis@gm.ntcu.edu.tw</a></li>
+                        <li style="word-break: break-all;">辦公室電話：<a
+                                href="tel:04-22183582、 傳真 04-22183580">04-22183582、
+                                傳真 04-22183580</a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>
