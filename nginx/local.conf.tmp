@@ -1,21 +1,21 @@
-set $domain 127.0.0.1;
-
-server {
+server  {
     listen [::]:80;
     listen 80;
+    
+    server_name <domain>;
 
-    server_name $domain;
-
-    # redirect http to https www
-    return 301 https://$domain$request_uri;
+    return 301 https://<domain>$request_uri;
 }
-
-
-server {
+server  {
     listen [::]:443 ssl http2;
     listen 443 ssl http2;
 
-    server_name $domain;
+    server_name <domain>;
+
+    ssl_certificate /etc/nginx/ssl/server.cer;
+    ssl_certificate_key /etc/nginx/ssl/server.key;
+    ssl_client_certificate /etc/nginx/ssl/uca.cer;
+
     root /var/www/html;
     location / {
         index  index.html index.htm;

@@ -8,8 +8,52 @@ services:
     environment:
       - TZ=Asia/Taipei    
     volumes:
-      - ./nginx:/etc/nginx/conf.d
       - ./site:/var/www/html 
+      - ./nginx:/etc/nginx/conf.d
+      - ./nginx/ssl/:/etc/nginx/ssl/:ro
     ports:
       - 80:80
-      - 443:433
+      - 443:443
+    networks:
+      - backend
+
+  backend:
+    image: 12893678/ntcu-cs-proxy-tool-service
+    container_name: backend
+    depends_on:
+      - mongo
+    restart: always
+    privileged: true
+    volumes:
+      - ./nginx:/nginx
+      - ./.backend_env:/.env
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    networks:
+      - backend
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment: 
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes: 
+      - ./db:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: backend
+    
+networks:
+  backend:
