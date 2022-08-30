@@ -53,7 +53,7 @@ services:
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: backend
+    command: --interval 30 backend
     
 networks:
   backend:
